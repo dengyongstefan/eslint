@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "diagnostics": false
+  },
+  "include": [
+    "src",
+    "__test__",
+    "build",
+    "eslint.config.js",
+    ".prettierrc.js",
+    "typedoc.config.js",
+    "*.ts",
+    "scripts/*.ts",
+  ]
+}
