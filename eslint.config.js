@@ -18,9 +18,9 @@ const compat = new FlatCompat({
 })
 
 export default [
+  ...compat.extends('plugin:@typescript-eslint/recommended', 'plugin:vue/vue3-recommended'),
   eslintPluginPrettierRecommended,
   eslintJsPlugin.configs.recommended,
-  ...compat.extends('plugin:@typescript-eslint/recommended', 'plugin:vue/vue3-recommended'),
   {
     // 全局配置
     ignores: ['node_modules', 'dist'],
